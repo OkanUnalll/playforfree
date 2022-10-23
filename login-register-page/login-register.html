@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayforFree > Giriş</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../css/login-register.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <div class="container nav__container">
+            <div class="nav__logo">
+                <a href="../index.html"><img class="nav__logo-img" style="height: 50px;" src="../img/logo/play-for-free-logos/nav-logo.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="login-register">
+        <div class="login-register__container">
+            <div class="login-register__head">
+                <div class="login-register__select-buttons">
+                    <button id="btn__login-select" class="btn btn__login-register-select btn__login-select" data-active="false">Giriş Yap</button>
+                    <button id="btn__register-select" class="btn btn__login-register-select btn__register-select login-register__btn-active" data-active="true">Kayıt Ol</button>
+                </div>
+            </div>
+            <div class="login-register__body">
+                <div class="login-register__left">
+                    <img class="login-register__img" src="../img/background/login-register-img.png" alt="">
+                </div>
+                <div class="login-register__right">
+                    <div class="login-register__right-head">
+                        <h1 class="login-register__right-head-title" style="color: var(--color-primary); text-align: center; margin-bottom: .8rem;">Kayıt Ol</h1>
+                        <p class="login-register__right-head-description" style="color: var(--color-white); text-align: center; font-weight: 400;">PlayforFree'ye kayıt olarak tüm ücretsiz ve indirimli oyunlardan haberdar ol!</p>
+                    </div>
+                    <div class="login-register__right-body">
+
+                        <!-- ! REGISTER FORM -->
+                        <form id="register-form" class="login-register__form" style="transform: scale(1); display: flex;" novalidate>
+                            <div class="login-register__form-group">
+                                <label for="username"><h4>Kullanıcı İsmi</h4></label>
+                                <i class="fa-solid fa-circle-exclamation reg-username-error-icon"></i>
+                                <i class="fa-solid fa-circle-check reg-username-check-icon"></i>
+                                <input id="reg-username" type="text" placeholder="Bir kullanıcı ismi oluşturun">
+                                <p class="reg-username-error-message form-error-message"></p>
+                            </div>
+
+                            <div class="login-register__form-group">
+                                <label for="email"><h4>E-posta adresi</h4></label>
+                                <i class="fa-solid fa-circle-exclamation reg-email-error-icon"></i>
+                                <i class="fa-solid fa-circle-check reg-email-check-icon"></i>
+                                <input id="reg-email" type="email" placeholder="E-posta adresinizi giriniz">
+                                <p class="reg-email-error-message form-error-message"></p>
+                            </div>
+
+                            <div class="login-register__form-group">
+                                <label for="password"><h4>Parola</h4></label>
+                                <i class="fa-solid fa-circle-exclamation reg-password-error-icon"></i>
+                                <i class="fa-solid fa-circle-check reg-password-check-icon"></i>
+                                <input id="reg-password" type="password" placeholder="Parolanızı giriniz">
+                                <p class="reg-password-error-message form-error-message"></p>
+                            </div>
+
+                            <div class="login-register__form-group">
+                                <label for="repassword"><h4>Tekrar parola</h4></label>
+                                <i class="fa-solid fa-circle-exclamation reg-repassword-error-icon"></i>
+                                <i class="fa-solid fa-circle-check reg-repassword-check-icon"></i>
+                                <input id="reg-repassword" type="password" placeholder="Parolanızı onaylayınız">
+                                <p class="reg-repassword-error-message form-error-message"></p>
+                            </div>
+
+                            <div class="login-register__form-group" style="margin-top: 1rem; display: flex; flex-direction: row; align-items: center;">
+                                <input id="reg-privecy-policy" type="checkbox">
+                                <p style="color: var(--color-white); line-height: 17px;">Gizlilik politikasını okudum ve onaylıyorum. <a href="#" target="_blank" style="color: var(--color-primary);">Gizlilik politikasını buradan inceleyin.</a></p>
+                                <p class="reg-privecy-policy-error-message form-error-message"></p>
+                            </div>
+
+                            <button type="submit" class="btn btn__style1">KAYIT OL <i class="fa-solid fa-caret-right"></i></button>
+                        </form>
+
+                        <!-- ! LOGIN FORM -->
+                        <form id="login-form" class="login-register__form" style="transform: scale(0); display: none;">
+
+                            <div class="login-register__form-group">
+                                <label for="email"><h4>E-posta adresi</h4></label>
+                                <i class="fa-solid fa-circle-exclamation login-username-error-icon"></i>
+                                <i class="fa-solid fa-circle-check login-username-check-icon"></i>
+                                <input id="log-email" type="email" placeholder="E-posta adresinizi giriniz">
+                                <p class="login-username-error-message form-error-message"></p>
+                            </div>
+        
+                            <div class="login-register__form-group">
+                                <label for="password"><h4>Parola</h4></label>
+                                <i class="fa-solid fa-circle-exclamation login-email-error-icon"></i>
+                                <i class="fa-solid fa-circle-check login-email-check-icon"></i>
+                                <input id="log-password" type="password" placeholder="Parolanızı giriniz">
+                                <p class="login-email-error-message form-error-message"></p>
+                            </div>
+        
+                            <button type="submit" class="btn btn__style1">GİRİŞ YAP <i class="fa-solid fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login-register.js"></script>
+</body>
+</html>

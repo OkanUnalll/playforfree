@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bedava oyun, oyun, video oyunu, bedava oyunlar, steam, steam bedava oyunlar, epic games, epic games bedava oyunlar, free, bedava oyun key, gog bedava oyun">
+    <meta name="description" content="Steam, epic games, gog, playstation ve xbox'da bedava olan oyunlar, indirimler ve diğer etkinlikler...">
+    <title>Play for Free > OYUN ÖNER</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../css/oyun-oner.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/template.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <div class="container nav__container">
+            <div class="nav__logo">
+                <a href="../index.html"><img class="nav__logo-img" src="../img/logo/play-for-free-logos/nav-logo.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header__title">
+            <h1>OYUN ÖNER</h1>
+            <button class="btn btn__header margin-top-1">Şimdi Başlayın <i class="fa-solid fa-sort-down col-padding-left--5"></i></button> 
+        </div>
+    </header>
+
+    <section class="row flex-row blog-row align-items-cen">
+        <div class="col-1-3">
+            <img style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" src="../img/oyun-oner-imgs/page-imgs/img1.jpg" alt="">
+        </div>
+        <div class="col-1-1 flex-column margin-left-2">
+            <div class="col-1-1 flex-column">
+                <h2 class="text-al-left">Nasıl Çalışır?</h2>
+                <h3 class="text-al-left col-padding-top-1" style="line-height: 25px; font-weight: 400;">OYUN ÖNER sistemimizin çalışma mantığı aslında çok basittir. Sizden bir kategori seçilmesi istenir ve seçtiğiniz kategori, sistemdeki oyunlar ile eşleştirilir. Eşleştirme işleminden sonra size rastgele bir oyun önerilir. </h3>
+            </div>
+
+            <div class="col-1-1 flex-column col-padding-top-1-5">
+                <h2 class="text-al-left">Bu Sistemin Amacı Nedir?</h2>
+                <div id="categorys__"></div>
+                <h3 class="text-al-left col-padding-top-1" style="line-height: 25px; font-weight: 400;">Bu sistemin amacı iyi potansiyele sahip ama fazla bilinmeyen, nostaljik, yeni çıkan, herkesin bildiği oyunları oynamaktan sıkılıp kendini bilinmeyen oyunların içinde bulmak isteyen vs. kişilerin bu sistemi ziyaret ederek yeni oyunlar keşfetmesini sağlamak için kulurmuş bir sistemdir.</h3>
+            </div>
+        </div>  
+    </section>
+
+    <section class="row flex-column blog-row">
+        <div class="col-1-1 justify-content-cen">
+            <h2 class="text-al-center">Kategori Seçin</h2>
+        </div>
+        <div class="col-1-1 col-padding-top-1 justify-content-cen">
+            <h3 class="align-items-cen" style="line-height: 25px; font-weight: 400;">Size önermemizi istediğiniz oyunun kategorisini alttaki kısımdan seçiniz. Kategori seçenekleri, ilerleyen zamanda artacaktır.</h3>
+        </div>
+        <div class="col-1-1 col-padding-top-1 justify-content-cen">
+            <ul class="filter-content__filter-items">
+                <li class="filter-content__filter-item"><button class="btn btn__filter-item" id="orta-cag" style="background-image: url(../img/oyun-oner-imgs/category-img/orta-cag.jpg);" data-category="orta-cag">ORTA ÇAĞ</button></li>
+                <li class="filter-content__filter-item"><button class="btn btn__filter-item" id="macera" style="background-image: url(../img/oyun-oner-imgs/category-img/macera.jpg);" data-category="macera">MACERA</button></li>
+                <li class="filter-content__filter-item"><button class="btn btn__filter-item" id="aksiyon" style="background-image: url(../img/oyun-oner-imgs/category-img/aksiyon.jpg);" data-category="aksiyon">AKSİYON</button></li>
+                <li class="filter-content__filter-item"><button class="btn btn__filter-item" id="yaris" style="background-image: url(../img/oyun-oner-imgs/category-img/yaris.jpg);" data-category="yaris">YARIŞ</button></li>
+                <li class="filter-content__filter-item"><button class="btn btn__filter-item" id="zenginHikaye" style="background-image: url(../img/oyun-oner-imgs/category-img/zengin-hikaye.jpg);" data-category="zenginHikaye">ZENGİN HİKAYE</button></li>
+                <li class="filter-content__filter-item"><button class="btn btn__filter-item" id="battleRoyale" style="background-image: url(../img/oyun-oner-imgs/category-img/battle-royale.jpg);" data-category="battleRoyale">BATTLE ROYALE</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row flex-column" style="margin-top: 7rem;">
+        <div class="col-1-1 justify-content-cen">
+            <h1>ÖNERİLERLER</h1>
+        </div>
+
+        <div class="col-1-1 justify-content-cen">
+            <div class="not-selected-yet" style="opacity: 1;">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <h2 style="text-align: center;">Henüz herhangi bir kategori seçmediniz. Lütfen bir kategori seçiniz.</h2>
+            </div>
+
+            <div class="game-suggestion__container" id="game-suggestion-container" style="opacity: 0;">
+                <div class="game-suggestion__game-cover-wrapper">
+                    <img class="game-suggestion__game-cover" src="../img/oyun-oner-imgs/lego-star-wars-the-skywalker-saga.png" alt="Game Image">
+                </div>
+
+                <div class="game-suggestion__game-info-wrapper">
+                    <span class="loading-message">YENİ OYUN ÖNERİLİYOR...</span>
+
+                    <div class="game-suggestion__game-info-left">
+                        <div class="game-suggestion__game-info">
+                            <div class="game-suggestion__game-info-table">
+                                <h3>Önerilen Oyun:</h3>
+                                <h1 class="game-suggestion__game-name">LEGO Star Wars: The Skywalker Saga</h1>
+                            </div>
+
+                            <div class="game-suggestion__game-info-table">
+                                <h3>Metacritic Skoru:</h3>
+                                <a class="metacritic-score" href="" target="_blank"><i class="fa-solid fa-star metacritic-score__star"></i> <h3 class="metacritic-score__score">12</h3></a>
+                            </div>
+
+                            <div class="game-suggestion__game-info-table">
+                                <h3>Platformlar:</h3>
+                                <div class="platforms">
+                                    <ul class="platforms__items">
+                                        <li class="platforms__item"><img class="platforms__item-icon" src="../img/logo/platform-logos/apple-logo-style-2.png" alt=""></li>
+                                        <li class="platforms__item"><img class="platforms__item-icon" src="../img/logo/platform-logos/windows-logo-style-2.png" alt=""></li>
+                                        <li class="platforms__item"><img class="platforms__item-icon" src="../img/logo/platform-logos/linux-logo-style-2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-suggestion__game-info-table">
+                                <h3>Çıkış Tarihi:</h3>
+                                <h3 class="game-suggestion__game-date">15 Tem 2021</h3>
+                            </div>
+                        </div>
+                        <div class="game-suggestion__user-info">
+                            <div class="game-suggestion__game-info-table">
+                                <h3>Seçilen Kategori</h3>
+                                <h3 class="game-suggestion__user-select-category user-data">Aksiyon</h3>
+                            </div>
+
+                            <div class="game-suggestion__game-info-table">
+                                <h3>Toplam Önerilenler</h3>
+                                <h3 class="game-suggestion__user-total-suggestion user-data">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-suggestion__game-info-right">
+                        <a href="#" target="_blank"><button class="btn btn__game-suggestion" id="go-store"><i class="fa-solid fa-bag-shopping"></i> Mağaza Sayfasına Git</button></a>
+                        <button class="btn btn__game-suggestion" id="reset-game" data-category=""><i class="fa-solid fa-arrow-rotate-right"></i> Başka Bir Oyun Öner</button>
+                        <a href="#categorys__"><button class="btn btn__game-suggestion" id="more-category"><i class="fa-solid fa-filter"></i> Başka Kategori Öner</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oyun öner form -->
+    <section class="row flex-column blog-row">
+        <div class="col-1-1 justify-content-cen">
+            <h2 class="text-al-center">Sizde Oyun Önerin</h2>
+        </div>
+        <div class="col-1-1 col-padding-top-1 justify-content-cen">
+            <h3 class="align-items-cen text-al-center" style="line-height: 25px; font-weight: 400;">Oyun öneri sistemimize sizde bir oyun önererek bize destek olabilir ve üstteki bölümde önerilen oyunun içeriğinde adınızın görünmesini sağlayabilirsiniz.</h3>
+        </div>
+        <div class="col-1-1 margin-top-2">
+            <form class="oyun-oner__form" action="https://formspree.io/f/mqkngryy" method="POST" autocomplete="off">
+                <div class="form-item">
+                    <label for="username">Gerçek ya da Takma İsminiz*</label>
+                    <input name="username" type="text" placeholder="Gerçek ya da dijital ortamda kullandığınız isminizi giriniz" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-posta Adresi*</label>
+                    <input name="e-mail" type="email" placeholder="E-posta adresinizi giriniz" required>
+                </div>
+                <div class="form-item">
+                    <label for="game-name">Önerdiğiniz Oyun yada Oyunlarınızın İsmi*</label>
+                    <input name="game-name" type="text" placeholder="Önerdiğiniz Oyun yada Oyunlarınızın İsmini giriniz" required>
+                </div>
+                <button class="btn btn__form" type="submit">BİZE GÖNDER <i class="fa-solid fa-up-right-from-square"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__left">
+                <p class="footer__description">Play for Free, herhangi bir resmi şirkete bağlı olmamaktadır ve projedeki tüm geliştirmeler <a href="http://okanunal.cf" target="_blank" style="color: var(--color-primary); text-decoration: underline;">Okan Ünal'a (proje sahibi)</a> aittir.
+                    Web sitesine girilen içerikler, herhangi bir database'den çekilmeyip, gönüllü ekip arkadaşlarımız tarafından manuel olarak 
+                    girilmektedir.
+                </p>
+            </div>
+            <div class="footer__right">
+                <a href="index.html"><img style="width: 70px;" src="../img/logo/play-for-free-logos/logo-style-1.png" alt=""></a>
+                <h3 style="color: var(--color-white);">PLAY FOR FREE</h3>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">2022 © powered by Okan Ünal</p>
+        </div>
+    </footer>
+
+    <script src="../js/oyun-oner-app.js"></script>
+</body>
+</html>
